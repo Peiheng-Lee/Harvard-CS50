@@ -9,5 +9,5 @@ else if (x > y)
 }
 else
 {
-    printf("x equals y\n");
+    printf("x is equal to y\n");
 }

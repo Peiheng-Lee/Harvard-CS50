@@ -5,6 +5,8 @@ void meow(int n);
 
 int main(void)
 {
+    int n = get_int("Number: ");
+    
     for (int i = 0; i < n; i++)
     {
         meow();

@@ -16,5 +16,5 @@ int main(void)
     {
         break;
     }
-    printd(:)
+    printf("Here's $%li\n", dollars);
 }

@@ -5,8 +5,12 @@ void meow(int n);
 
 int main(void)
 {
-    int n = get_int("Number: ");
-    meow(n);
+    int n
+    do
+    {
+        n = get_int("Number: ")
+    }
+    while (n<1)
 }
 
 void meow(int n)

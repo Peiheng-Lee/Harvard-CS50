@@ -1,10 +1,7 @@
 #include <cs50.h>
 #include <stdio.h>
 
-void meow(void)
-{
-    printf("meow\n");
-}
+void meow(void);
 
 int main(void)
 {
@@ -12,4 +9,9 @@ int main(void)
     {
         meow();
     }
+}
+
+void meow(void)
+{
+    printf("meow\n");
 }

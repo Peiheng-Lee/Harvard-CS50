@@ -1,7 +1,7 @@
 #include <cs50.h>
 #include <stdio.h>
 
-void print_rows(int n);
+void print_symmetry_rows(int n);
 
 int main(void)
 {
@@ -11,7 +11,7 @@ int main(void)
         rows = get_int("Give me a row number:");
     }
     while (rows < 1);
-    print_symmetry_rows(rows);
+    print_symmetry_rows(rows+1);
 }
 
 void print_symmetry_rows(int n)
@@ -27,7 +27,10 @@ void print_symmetry_rows(int n)
             printf("#");
         }
         printf("  ");
-        
+        for (l = 0; l < n; l++)
+        {
+            printf("#");
+        }
         printf("\n");
     }
 }

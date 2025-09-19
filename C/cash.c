@@ -14,11 +14,24 @@ int main(void)
 
 int calculate_quarters(int cents)
 {
-    int
+    int quarters = 0;
+    while (cents >= 25)
+    {
+        quarters++;
+        cents -=25;
+    }
+    return quarters
 }
 
-
-void get_count(int n)
+int calculate_dimes(int quarters)
 {
-    for
+    int dimes = 0;
+    while (cents >= 10)
+    {
+        dimes++;
+        cents -= 10;
+    }
+    return dimes
 }
+
+int calcu

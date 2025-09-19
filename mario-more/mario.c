@@ -5,13 +5,13 @@ void print_symmetry_rows(int n);
 
 int main(void)
 {
-    int rows;
+    int height;
     do
     {
-        rows = get_int("Give me a row number:");
+        height = get_int("Height:");
     }
-    while (rows < 1);
-    print_symmetry_rows(rows);
+    while (height < 1);
+    print_symmetry_rows(height);
 }
 
 void print_symmetry_rows(int n)
@@ -27,7 +27,7 @@ void print_symmetry_rows(int n)
             printf("#");
         }
         printf("  ");
-        for (int l = 0; l < i; l++)
+        for (int l = 0; l < i; l++) // 可以有更多优化：把打印#的过程写成一个函数，避免重复
         {
             printf("#");
         }

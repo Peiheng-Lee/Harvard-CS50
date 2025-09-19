@@ -21,8 +21,5 @@ void print_rows(int n)
         printf("#");
     }
     printf("  ");
-    for (int i = 1; i< n; i++)
-    {
-        printf("#");
-    }
+
 }

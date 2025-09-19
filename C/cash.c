@@ -20,10 +20,10 @@ int calculate_quarters(int cents)
         quarters++;
         cents -=25;
     }
-    return quarters
+    return quarters;
 }
 
-int calculate_dimes(int quarters)
+int calculate_dimes(int cents)
 {
     int dimes = 0;
     while (cents >= 10)
@@ -31,7 +31,27 @@ int calculate_dimes(int quarters)
         dimes++;
         cents -= 10;
     }
-    return dimes
+    return dimes;
 }
 
-int calculate_
+int calculate_nickles(int cents)
+{
+    int nickles = o;
+    while (cents >= 5)
+    {
+        nickles++;
+        cents-=5;
+    }
+    return nickles;
+}
+
+int calculate_pennies(int cents)
+{
+    int pennies = 0;
+    while(cents > 0)
+    {
+        pennies++;
+        cents -= 1;
+    }
+    return cents;
+}

@@ -27,7 +27,7 @@ void print_symmetry_rows(int n)
             printf("#");
         }
         printf("  ");
-        for (l = 0; l < n; l++)
+        for (int l = 0; l < n; l++)
         {
             printf("#");
         }

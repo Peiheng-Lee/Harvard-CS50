@@ -16,7 +16,7 @@ int main(void)
 
 void print_symmetry_rows(int n)
 {
-    for (int i = 1; i <= n; i++)
+    for (int i = 1; i <= n; i++) // 注意要有=，不然会多出一个空格
     {
         for (int j = 0; j < n - i; j++) // 对于每一行，遍历一次空格
         {

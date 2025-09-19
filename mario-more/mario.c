@@ -16,7 +16,12 @@ int main(void)
 
 void print_rows(int n)
 {
-    for (int i = 1; i<= n; i++)
+    for (int i = 1; i< n; i++)
+    {
+        printf("#");
+    }
+    printf("  ");
+    for (int i = 1; i< n; i++)
     {
         printf("#");
     }

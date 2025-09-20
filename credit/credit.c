@@ -13,5 +13,8 @@ int main(void)
 
 int luhn_isvalid(long n)
 {
-    1
+    for (i = strlen(n) - 1; i >= 0; i--)
+    {
+        if 
+    }
 }

@@ -20,7 +20,7 @@ int main(void)
     cents = cents % 5;
 
     int pennies = cents;
-    
+
     int total = quarters + dimes + nickels + pennies;
     printf("%i\n", total);
 }

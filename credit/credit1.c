@@ -21,11 +21,6 @@ bool isValidLuhn(const char *number_str) {
     for (int i = strlen(number_str) - 1; i >= 0; i--) {
         char c = number_str[i];
 
-        // 跳过非数字字符（例如空格或破折号）
-        if (!isdigit(c)) {
-            continue;
-        }
-
         int digit = c - '0'; // 将字符转换为整数
 
         if (isSecond) {

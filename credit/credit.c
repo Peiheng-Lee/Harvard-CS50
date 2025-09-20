@@ -15,6 +15,9 @@ int luhn_isvalid(long n)
 {
     for (i = strlen(n) - 1; i >= 0; i--)
     {
-        if 
+        int c = num[]
+
+
+        if
     }
 }

@@ -9,7 +9,7 @@ int main(int argc; string argv[])
         printf("Missing command-line arguments.\n");
         return 1;
     }
-    printf("hello, %s\n", argv[1])
+    printf("hello, %s\n", argv[1]);
     else
     {
         return 0;

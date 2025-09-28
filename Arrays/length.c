@@ -4,7 +4,7 @@
 int main(void)
 {
     string name = get_string("Name:");
-
+    int length = string_length()
     int n = 0;
     while (name[n] != '\0') // single quote for a character
     {

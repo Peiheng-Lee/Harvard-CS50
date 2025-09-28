@@ -10,7 +10,11 @@ int main(void)
     {
         if (name[i] >= 'a' && name[i] <= 'z')
         {
-            printf("%c", name[i] - 32);
+            printf("%c", name[i] - 32); // ASCII
+        }
+        else
+        {
+            printf("%c", name[i]);
         }
     }
     printf("\n");

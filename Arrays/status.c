@@ -10,8 +10,5 @@ int main(int argc, string argv[])
         return 1;
     }
     printf("hello, %s\n", argv[1]);
-    else
-    {
-        return 0;
-    }
+    return 0;
 }

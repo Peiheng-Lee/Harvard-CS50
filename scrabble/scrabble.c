@@ -39,7 +39,7 @@ int compute_score(string word)
     {
         if (isupper(word[i]))
         {
-            int index1 = word[i] - 'A'; // word[i] is a char
+            int index1 = word[i] - 'A'; // word[i] is a char; 'A' = 65
             score += POINTS[index1];
         }
         else if (islower(word[i]))

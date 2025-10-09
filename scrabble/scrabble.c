@@ -24,14 +24,7 @@ int compute_score(string word)
 {
     for (int i = 0, n = strlen(word); i < n; i++)
     {
-        sum += 
+        sum += POINTS[int(word[i]) - 32]
     }
 }
 
-string scrabble(string a, string b)
-{
-    while (a[i] != "/0")
-    {
-        sum1 +=
-    }
-}

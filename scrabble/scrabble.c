@@ -3,7 +3,16 @@
 
 int main(void)
 {
-    char word1 = get_char("Player1:");
-    char word2 = get_char("Player2:");
+    string word1 = get_char("Player1:");
+    string word2 = get_char("Player2:");
+    printf("%s\n", scrabble(word1, word2))
 
+}
+
+string scrabble(string a, string b)
+{
+    while (a[i] != "/0")
+    {
+        sum1 += 
+    }
 }

@@ -11,6 +11,7 @@ int compute_score(string word);
 
 int main(void)
 {
+    // Prompt the user for two words
     string word1 = get_string("Player1:");
     string word2 = get_string("Player2:");
 
@@ -18,6 +19,7 @@ int main(void)
     int score1 = compute_score(word1);
     int score2 = compute_score(word2);
 
+    // Print the winner
     if (score1 > score2)
     {
         printf("Player 1 wins!\n");
@@ -39,13 +41,12 @@ int compute_score(string word)
     {
         if (isupper(word[i]))
         {
-            int index1 = word[i] - 'A'; // word[i] is a char; 'A' = 65
-            score += POINTS[index1];
+            // word[i] is a char; 'A' = 65
+            score += POINTS[word[i] - 'A'];
         }
         else if (islower(word[i]))
         {
-            int index2 = word[i] - 'a';
-            score += POINTS[index2];
+            score += POINTS[word[i] - 'a'];
         }
     }
     return score;

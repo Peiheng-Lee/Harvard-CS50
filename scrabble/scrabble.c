@@ -24,6 +24,7 @@ int compute_score(string word)
 {
     for (int i = 0, n = strlen(word); i < n; i++)
     {
+        if (isupper())
         sum += POINTS[int(word[i]) - 32]
     }
 }

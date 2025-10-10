@@ -28,5 +28,7 @@ int count_letters(string text)
 
 int count_words(string text)
 {
-    p
+    count = 0;
+    for (i = 0, len = strlen(text); i < len; i++)
+    if not(isalpha(text[i]))
 }

@@ -4,16 +4,16 @@
 #include <stdio.h>
 #include <string.h>
 
-float count_letters(string text);
-float count_words(string text);
-float count_sentences(string text);
+int count_letters(string text);
+int count_words(string text);
+int count_sentences(string text);
 
 int main(void)
 {
     string text = get_string("Text:");
     int letters = count_letters(text);
-    float words = count_words(text);
-    float sentences = count_sentences(text);
+    int words = count_words(text);
+    int sentences = count_sentences(text);
 
     float L = (letters / words) * 100;
     float S = (sentences / words) * 100;
@@ -34,7 +34,7 @@ int main(void)
     }
 }
 
-float count_letters(string text)
+int count_letters(string text)
 {
     int letter_count = 0;
     // 在同一条Declaration Statement中对多个变量进行初始化，只需在最前面声明一次类型
@@ -48,7 +48,7 @@ float count_letters(string text)
     return letter_count;
 }
 
-float count_words(string text)
+int count_words(string text)
 {
     int word_count = 1;
     for (int j = 0, len = strlen(text); j < len; j++)
@@ -61,7 +61,7 @@ float count_words(string text)
     return word_count;
 }
 
-float count_sentences(string text)
+int count_sentences(string text)
 {
     int sentence_count = 0;
     for (int k = 0, len = strlen(text); k < len; k++)

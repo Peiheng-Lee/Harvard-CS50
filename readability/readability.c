@@ -18,7 +18,7 @@ int count_letters(string text)
     count = 0;
     for (i = 0, len = strlen(text); i < len; i++)
     {
-        if (text[i] != ' ')
+        if (isalpha(text[i])) // ctype.h
         {
             count += 1;
         }

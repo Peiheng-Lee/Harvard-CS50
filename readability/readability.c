@@ -49,10 +49,10 @@ int count_letters(string text)
 
 int count_words(string text)
 {
-    int count = 0;
+    int count = 1;
     for (int i = 0, len = strlen(text); i < len; i++)
     {
-        if (isblank(text[i])) // 有空格，就
+        if (isblank(text[i])) // 有空格，就加1
         {
             count += 1;
         }

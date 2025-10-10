@@ -6,5 +6,14 @@
 
 int main(void)
 {
-    p
+    string text = get_string("Text:");
+    count_letters()
+}
+
+int count_letters(string text)
+{
+    for (i = 0, len = strlen(text); i < len; i++)
+    {
+        if text[i] != 
+    }
 }

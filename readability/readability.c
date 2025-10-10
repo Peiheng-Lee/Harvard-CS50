@@ -37,11 +37,11 @@ int main(void)
 int count_letters(string text)
 {
     int count = 0;
-    for (int i = 0, len = strlen(text); i < len; i++)
+    for (int i = 0, int len = strlen(text); i < len; i++)
     {
         if (isalpha(text[i])) // ctype.h
         {
-            count += 1;
+            count ++;
         }
     }
     return count;
@@ -50,11 +50,11 @@ int count_letters(string text)
 int count_words(string text)
 {
     int count = 1;
-    for (int i = 0, len = strlen(text); i < len; i++)
+    for (int j = 0, int len = strlen(text); j < len; j++)
     {
-        if (isblank(text[i])) // 有空格，就加1
+        if (isblank(text[j])) // 有空格，就加1
         {
-            count += 1;
+            count ++;
         }
     }
     return count;
@@ -63,11 +63,11 @@ int count_words(string text)
 int count_sentences(string text)
 {
     int count = 0;
-    for (int i = 0, len = strlen(text); i < len; i++)
+    for (int k = 0, int len = strlen(text); k < len; k++)
     {
         if (text[i] == '.' || text[i] == '?' || text[i] == '!')
         {
-            count += 1;
+            count ++;
         }
     }
     return count;

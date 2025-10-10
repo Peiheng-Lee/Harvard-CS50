@@ -42,7 +42,7 @@ int count_letters(string text)
     {
         if (isalpha(text[i])) // ctype.h
         {
-            count ++;
+            count++;
         }
     }
     return count;
@@ -55,7 +55,7 @@ int count_words(string text)
     {
         if (isblank(text[j])) // 有空格，就加1
         {
-            count ++;
+            count++;
         }
     }
     return count;
@@ -68,7 +68,7 @@ int count_sentences(string text)
     {
         if (text[k] == '.' || text[k] == '?' || text[k] == '!')
         {
-            count ++;
+            count++;
         }
     }
     return count;

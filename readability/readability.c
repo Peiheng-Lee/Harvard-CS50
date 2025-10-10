@@ -11,7 +11,7 @@ float count_sentences(string text);
 int main(void)
 {
     string text = get_string("Text:");
-    float letters = count_letters(text);
+    int letters = count_letters(text);
     float words = count_words(text);
     float sentences = count_sentences(text);
 

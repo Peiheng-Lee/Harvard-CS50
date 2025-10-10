@@ -19,25 +19,25 @@ int main(void)
     float S = (sentences / words) * 100;
     float index = 0.0588 * L - 0.296 * S - 15.8;
 
-    int index = round(index);
-    if (index >= 16)
+    int findex = round(index);
+    if (findex >= 16)
     {
         printf("Grade 16+\n");
     }
-    else if (index < 1)
+    else if (findex < 1)
     {
         printf("Before Grade 1\n");
     }
     else
     {
-        printf("Grade %i\n", index);
+        printf("Grade %i\n", findex);
     }
 }
 
 int count_letters(string text)
 {
-    count = 0;
-    for (i = 0, len = strlen(text); i < len; i++)
+    int count = 0;
+    for (int i = 0, len = strlen(text); i < len; i++)
     {
         if (isalpha(text[i])) // ctype.h
         {
@@ -49,8 +49,8 @@ int count_letters(string text)
 
 int count_words(string text)
 {
-    count = 0;
-    for (i = 0, len = strlen(text); i < len; i++)
+    int count = 0;
+    for (int i = 0, len = strlen(text); i < len; i++)
     {
         if (!isalpha(text[i])) // !对逻辑表达式取反
         {
@@ -62,8 +62,8 @@ int count_words(string text)
 
 int count_sentences(string text)
 {
-    count = 0;
-    for (i = 0, len = strlen(text); i < len; i++)
+    int count = 0;
+    for (int i = 0, len = strlen(text); i < len; i++)
     {
         if (text[i] = '.' || text[i] = '?' || text[i] = '!')
         {

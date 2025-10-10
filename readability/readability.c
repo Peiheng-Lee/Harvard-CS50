@@ -52,7 +52,7 @@ int count_words(string text)
     int count = 0;
     for (int i = 0, len = strlen(text); i < len; i++)
     {
-        if (!isalpha(text[i])) // !对逻辑表达式取反
+        if (isblank(text[i])) // !对逻辑表达式取反
         {
             count += 1;
         }

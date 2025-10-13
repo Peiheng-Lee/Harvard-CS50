@@ -10,15 +10,20 @@ int count_sentences(string text);
 
 int main(void)
 {
+    // Prompt the user for some text
     string text = get_string("Text:");
+
+    // Count the number of letters, words, and sentences in the text
     int letters = count_letters(text);
     int words = count_words(text);
     int sentences = count_sentences(text);
 
-    float L = (float(letters) / float(words)) * 100;
-    float S = (sentences / words) * 100;
+    // Compute the Coleman-Liau index
+    float L = ((float)letters / (float)words) * 100; // 注意转换的格式submit50 cs50/problems/2025/x/readability
+    float S = ((float)sentences / (float)words) * 100;
     float index = 0.0588 * L - 0.296 * S - 15.8;
 
+    // Print the grade level
     int findex = round(index);
     if (findex >= 16)
     {

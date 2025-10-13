@@ -3,5 +3,14 @@
 
 int main(void)
 {
-    p
+    int number[] = {, , , , , , , };
+
+    int n = get_int("Number:");
+    for (int i = 0; i < 7; i++)
+    {
+        if (number[i] == n)
+        {
+            printf("Found!\n");
+        }
+    }
 }

@@ -4,5 +4,5 @@
 
 int main(void)
 {
-    string names[]
+    string names[] = {"Yulia", "Malan", "John Harvard"}
 }

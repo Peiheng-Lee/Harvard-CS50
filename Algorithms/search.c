@@ -10,7 +10,10 @@ int main(void)
     {
         if (numbers[i] == n)
         {
-            printf("Found!\n");
+            printf("Found\n");
+            return 0; // success
         }
     }
+    printf("Not found\n");
+    return 0;
 }

@@ -3,8 +3,15 @@
 
 int main(void)
 {
-    string strings[] = {'battleship', 'boot', 'canon', ', 100, 1, 50};
+    string strings[] = {'battleship', 'boot', 'canon', 'iron', 'thimble', 'top hat'};
 
-    int n = get_int("Number:");
-    for (int i = 0; i < 7; i++)
+    string s = get_string("String:");
+    for (int i = 0; i < 6; i++)
+    {
+        if (string[i] == s)
+        {
+            printf("Found\n");
+            return 0;
+        }
+    }
 }

@@ -1,5 +1,6 @@
 #include <cs50.h>
 #include <stdio.h>
+#include <string.h>
 
 int main(void)
 {
@@ -8,7 +9,8 @@ int main(void)
     string s = get_string("String:");
     for (int i = 0; i < 6; i++)
     {
-        if (string[i] == s) // '==' is not suitable for strings
+        // if (string[i] == s)  '==' is not suitable for strings
+        if (strcmp(string[i], s) == 0) // 3 return values
         {
             printf("Found\n");
             return 0;

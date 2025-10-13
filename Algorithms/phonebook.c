@@ -4,5 +4,6 @@
 
 int main(void)
 {
-    string names[] = {"Yulia", "Malan", "John Harvard"}
+    string names[] = {"Yuliia", "David", "John"};
+    int numbers[] = {"+1-617-495-1000", "+1-617-495-1000", "+1-949-468-2750"}
 }

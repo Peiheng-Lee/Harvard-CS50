@@ -5,13 +5,8 @@
 int main(void)
 {
     // 2 parrelel arrays
-    typedef struct
-    {
-        string names[] = {"Yuliia", "David", "John"};
-        int numbers[] = {"+1-617-495-1000", "+1-617-495-1000", "+1-949-468-2750"};
-    }
-    person;
-
+    string names[] = {"Yuliia", "David", "John"};
+    string numbers[] = {"+1-617-495-1000", "+1-617-495-1000", "+1-949-468-2750"};
 
     string name = get_string("Name:");
 

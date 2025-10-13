@@ -12,9 +12,9 @@ int main(void)
 
     for (int i = 0; i < 3; i++)
     {
-        if (strcmp(names[i], name == 0))
+        if (strcmp(names[i], name) == 0)
         {
-            printf("Found %i\n", number[i]);
+            printf("Found %i\n", numbers[i]);
             return 0;
         }
     }
